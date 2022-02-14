@@ -1,0 +1,495 @@
+:root {
+  --white-color-text: #fff;
+  --smallscreen-background-color: #f8f9fa;
+  --text-muted: #6c757d;
+  --main-color: #2c6e2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* font-family: "Roboto Slab", serif; */
+  font-family: "Markazi Text", serif;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*GENERAL*/
+hr {
+  margin-top: 2rem !important;
+  margin-bottom: 0 !important;
+  /* background-color: #292b2c !important; */
+}
+
+.center-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*NAVBAR LINK*/
+.menu-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: #292b2c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.menu-list a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  border-top: 5px solid rgba(255, 255, 255, 0);
+}
+
+.menu-list a:hover {
+  border-top: 5px solid var(--main-color);
+  background-color: #ddd;
+  color: var(--main-color);
+  padding: 15px 16px;
+}
+
+.active-item {
+  border-top: 5px solid var(--main-color) !important;
+  background-color: #ddd;
+  color: var(--main-color) !important;
+  padding: 5px 16px;
+}
+
+@media screen and (min-width: 560px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-list {
+    padding: 0px 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #home span {
+    display: none;
+  }
+
+  #home::after {
+    content: "Home";
+  }
+
+  #about span {
+    display: none;
+  }
+
+  #about::after {
+    content: "About";
+  }
+
+  #contact span {
+    display: none;
+  }
+
+  #contact::after {
+    content: "Contact";
+  }
+  #tour span {
+    display: none;
+  }
+
+  #tour::after {
+    content: "Tours";
+  }
+}
+
+/*BANNER*/
+.banner-wrapper {
+  margin-top: 3rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 425px) {
+  .banner-wrapper {
+    margin-top: 2rem;
+  }
+}
+
+/*Subscribe form##############################*/
+.subscribe-form-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    display: none;
+  }
+
+  .subscribe-info {
+    display: none;
+  }
+
+  .subscribe-form {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form-wrapper {
+    position: absolute;
+    top: 11%;
+    right: 2%;
+    z-index: 9998;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .subscribe-info {
+    color: #fff;
+    text-align: center;
+  }
+
+  .subscribe-form-wrapper h4 {
+    font-size: 14pt;
+  }
+
+  .subscribe-form-wrapper h1 {
+    font-size: 16pt;
+  }
+
+  .subscribe-form-wrapper p {
+    margin: 0;
+  }
+
+  .logo {
+    text-align: center;
+  }
+  .logo img {
+    width: 15%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .subscribe-form-wrapper {
+    position: absolute;
+    top: 11%;
+    right: 2%;
+    z-index: 9998;
+    width: 30%;
+  }
+
+  .subscribe-info {
+    color: #fff;
+    text-align: center;
+  }
+
+  .subscribe-form-wrapper p {
+    margin: 0;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form-wrapper {
+    top: 8%;
+    width: 25%;
+  }
+}
+
+/*Banner###############*/
+.banner {
+  height: 400px;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  font-family: "Markazi Text", serif;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    height: calc(400px + 5vh);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    height: calc(400px + 15vh);
+  }
+}
+
+.upper-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 300%;
+}
+
+@media screen and (min-width: 922px) {
+  .upper-text {
+    font-size: 400%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .upper-text {
+    top: 30%;
+    left: 10%;
+    font-size: 500%;
+  }
+}
+
+#upper-text span {
+  display: none;
+}
+
+#upper-text::before {
+  color: #fff;
+  content: "";
+  border: 1px solid #fff;
+  border-radius: 5px;
+  animation-name: upper-text;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes upper-text {
+  0% {
+    border: 1px solid orange;
+    color: orange;
+    content: "Tuổi trẻ";
+  }
+  50% {
+    border: 1px solid blue;
+    color: blue;
+    content: "Gặp nhau";
+  }
+  100% {
+    border: 1px solid purple;
+    color: purple;
+    content: "Thử thách";
+  }
+}
+
+.lower-text {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-size: 350%;
+}
+
+@media screen and (min-width: 768px) {
+  .lower-text {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 922px) {
+  .lower-text {
+    left: 40%;
+    font-size: 450%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lower-text {
+    top: 50%;
+    left: 40%;
+    font-size: 550%;
+  }
+}
+
+#lower-text span {
+  display: none;
+}
+
+#lower-text::before {
+  color: #fff;
+  content: "";
+  border: 1px solid red;
+  border-radius: 5px;
+  animation-name: lower-text;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes lower-text {
+  0% {
+    border: 1px solid orange;
+    color: orange;
+    content: "chuyến đi";
+  }
+  50% {
+    border: 1px solid blue;
+    color: blue;
+    content: "niềm vui";
+  }
+  100% {
+    border: 1px solid purple;
+    color: purple;
+    content: "câu chuyện";
+  }
+}
+
+/*TOUR LIST##########################*/
+.tour-list-wrapper {
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 425px) {
+  .tour-list-wrapper {
+    padding: 4rem 2rem 0 2rem;
+  }
+}
+
+/*tour-image*/
+.tour-image {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.tour-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tour-logo {
+  height: 128px;
+  width: 128px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -50%;
+  left: 0;
+  margin: 0 auto;
+  /* z-index: 9997; */
+}
+
+/*tour*/
+.tour {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 2rem 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*tour-description*/
+.tour-description {
+  height: calc(200px + 5vh);
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .tour-description {
+    height: calc(200px + 5vh);
+    padding: 1rem 0;
+    font-size: 120%;
+  }
+}
+
+.tour-description ul {
+  list-style-type: square;
+}
+
+/*side-picture*/
+.side-picutre {
+  width: 100%;
+  height: auto;
+}
+
+/*FOOTER########################*/
+.footer-wrapper {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*FOOTER - LINK*/
+.link-wrapper {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.other-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .row-link-wrapper {
+    text-align: left;
+  }
+
+  #other-link-column {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #other-link-column,
+  #contact-column {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #other-link-column,
+  #contact-column {
+    padding-left: 8rem;
+  }
+}
+
+/*DISPLAY NONE FOR SOME CLASS IN SMALL SCREEN*/
+@media screen and (max-width: 767px) {
+  .subscribe-form-wrapper {
+    display: none;
+  }
+}

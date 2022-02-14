@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="../static/tour-list-style.css"
+      type="text/css"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>DU LICH CU CHI</title>
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="menu-wrapper">
+      <div class="menu fixed-menu">
+        <div class="menu-list">
+          <a href="../index.html" id="home"
+            ><span><i class="bi bi-house-door-fill"></i></span
+          ></a>
+          <a href="#member-about" id="about"
+            ><span><i class="bi bi-file-person"></i></span
+          ></a>
+          <a href="#group-contact" id="contact"
+            ><span><i class="bi bi-telephone-fill"></i></span
+          ></a>
+          <a href="#" id="tour" class="active-item"
+            ><span><i class="bi bi-list-task"></i></span
+          ></a>
+        </div>
+        <div class="menu-list">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER-->
+    <section class="banner-wrapper">
+      <!-- Banner section-->
+      <div class="banner">
+        <div class="upper-text">
+          <p id="upper-text"><span>Tuổi trẻ</span> là những</p>
+        </div>
+        <div class="lower-text">
+          <p id="lower-text"><span>Chuyến đi</span></p>
+        </div>
+      </div>
+      <!-- Banner section-->
+
+      <!-- Subscribe form -->
+      <div class="subscribe-form-wrapper">
+        <div class="container">
+          <div
+            class="row mx-2 d-flex justify-content-between flex-column py-sm-1 py-xl-3"
+          >
+            <div class="logo">
+              <img src="../images/logo.png" class="logo-image" alt="logo" />
+            </div>
+            <div class="mb-3">
+              <div class="subscribe-info">
+                <h4>CTY Dịch vụ lữ hành</h4>
+                <h1>VE CHAI</h1>
+                <p>Tour cộng đồng tham quan Củ Chi</p>
+              </div>
+            </div>
+            <form action="" class="subscribe-form">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3 text-center">
+                <button class="btn btn-success mx-auto">Chi tiết</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Subscribe form -->
+    </section>
+    <!-- BANNER-->
+
+    <!-- TOURS LIST -->
+    <section class="tour-list-wrapper">
+      <div class="container">
+        <!-- Grid row -->
+        <div class="row d-flex justify-content-center">
+          <!-- Grid colum -->
+          <div class="col-sm-4 flex-1">
+            <div class="tour-image">
+              <img
+                src="../images/tour-list/tour.png"
+                class="tour-logo"
+                alt="tour image"
+              />
+            </div>
+            <div class="tour">
+              <div class="tour-header">
+                <h1>Làng sinh thái Fosaco</h1>
+              </div>
+              <div class="tour-description">
+                <ul>
+                  <li>Khám phá các nền văn hoá dân tộc ở Củ Chi</li>
+                  <li>Tham gia các lễ hội truyền thống</li>
+                  <li>Thưởng thức các món ăn tuyệt vời</li>
+                  <li>Đi về trong ngày</li>
+                </ul>
+              </div>
+              <div class="tour-footer">
+                <a href="../pages/fosaco-tour.html">
+                  <button class="btn btn-register">Chi tiết</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid colum -->
+
+          <!-- Grid colum -->
+          <div class="col-sm-4 flex-1">
+            <div class="tour-image">
+              <img
+                src="../images/tour-list/tour.png"
+                class="tour-logo"
+                alt="tour image"
+              />
+            </div>
+            <div class="tour">
+              <div class="tour-header">
+                <h1>Địa đạo Củ Chi</h1>
+              </div>
+              <div class="tour-description">
+                <ul>
+                  <li>Khám phá địa đạo Củ Chi</li>
+                  <li>Khám phá vùng giải phóng</li>
+                  <li>Thưởng thức củ mì truyền thống</li>
+                  <li>Đi về trong ngày</li>
+                </ul>
+              </div>
+              <div class="tour-footer">
+                <a href="../pages/tunnel-tour.html">
+                  <button class="btn btn-register">Chi tiết</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid colum -->
+
+          <!-- Grid colum -->
+          <div class="col-sm-4 flex-1">
+            <div class="tour-image">
+              <img
+                src="../images/tour-list/tour.png"
+                class="tour-logo"
+                alt="tour image"
+              />
+            </div>
+            <div class="tour">
+              <div class="tour-header">
+                <h1>Vòng quanh Củ Chi</h1>
+              </div>
+              <div class="tour-description">
+                <ul>
+                  <li>Dạo vòng quanh Củ Chi</li>
+                  <li>Ngắm nhìn những cánh đồng bạt ngàn</li>
+                  <li>Thưởng thức các món ăn địa phương tuyệt vời</li>
+                  <li>Đi về trong ngày</li>
+                </ul>
+              </div>
+              <div class="tour-footer">
+                <a href="../pages/around-cc.html">
+                  <button class="btn btn-register">Chi tiết</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid colum -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="footer-wrapper" id="group-contact">
+      <hr />
+      <!-- Section: Link -->
+      <section class="link-wrapper">
+        <div class="container">
+          <!-- Grid row -->
+          <div class="row mt-3 row-link-wrapper">
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">Ve Chai Tour</h6>
+              <p>
+                Các bạn tưởng là tour đi nhặt rác đúng không? Không, đấy là tour
+                bảo vệ môi trường :)
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-4" id="other-link-column">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Liên kết khác</h6>
+              <p>
+                <a
+                  href="https://vi.wikipedia.org/wiki/C%E1%BB%A7_Chi"
+                  class="other-link"
+                  >Wikipedia</a
+                >
+              </p>
+              <p>
+                <a href="http://diadaocuchi.com.vn/" class="other-link"
+                  >Địa đạo Củ Chi</a
+                >
+              </p>
+              <p>
+                <a href="#" class="other-link">More link</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-4" id="contact-column">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+              <p>
+                <i class="bi bi-house-door-fill" style="font-style: normal">
+                  Tân Thạnh Tây, Củ Chi, TP.HCM</i
+                >
+              </p>
+              <p>
+                <i class="bi bi-envelope-fill" style="font-style: normal">
+                  phuocthfx15563@funix.edu.vn</i
+                >
+              </p>
+              <p>
+                <i class="bi bi-telephone-fill" style="font-style: normal">
+                  +84 03797128xx</i
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+    </footer>
+    <!--FOOTER-->
+  </body>
+</html>

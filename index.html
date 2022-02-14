@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="static/main-styles.css" type="text/css" />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -12,133 +12,510 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <title>HOME</title>
+    <title>DU LICH CU CHI</title>
   </head>
   <body>
     <!-- MENU -->
-
-    <nav class="navbar">
-      <div class="container-fluid d-flex justify-content-between menu-wrapper">
-        <ul class="menu-list">
-          <li class="menu-item"><a href="#">BRAND</a></li>
-          <li class="menu-item"><a href="#">BROWSER</a></li>
-        </ul>
-        <ul class="menu-list">
-          <li class="menu-item"><a href="#">SING UP</a></li>
-          <li class="menu-item"><a href="#">LOG IN</a></li>
-          <li class="menu-item"><a href="#">HELP</a></li>
-        </ul>
+    <nav class="menu-wrapper">
+      <div class="menu fixed-menu">
+        <div class="menu-list">
+          <a href="#" class="active-item" id="home"
+            ><span><i class="bi bi-house-door-fill"></i></span
+          ></a>
+          <a href="#member-about" id="about"
+            ><span><i class="bi bi-file-person"></i></span
+          ></a>
+          <a href="#group-contact" id="contact"
+            ><span><i class="bi bi-telephone-fill"></i></span
+          ></a>
+          <a href="pages/tour-list.html" id="tour"
+            ><span><i class="bi bi-list-task"></i></span
+          ></a>
+        </div>
+        <div class="menu-list">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
       </div>
     </nav>
 
-    <!-- BANNER -->
-    <section>
-      <div class="container-fluid banner">
-        <div class="banner-content">
-          <h1 class="banner-heading">Find a place to stay.</h1>
-          <p class="banner-text">
-            Rent from people in over 34,000 cities and 192 countries.
+    <!-- BANNER-->
+    <section class="banner-wrapper">
+      <!-- Banner section-->
+      <div class="banner">
+        <div class="upper-text">
+          <p id="upper-text"><span>Tuổi trẻ</span> là những</p>
+        </div>
+        <div class="lower-text">
+          <p id="lower-text"><span>Chuyến đi</span></p>
+        </div>
+      </div>
+
+      <!--Subscript form for small screen-->
+      <div class="mb-3">
+        <div class="subscribe-info-sm-screen text-center" style="color: #fff">
+          <h4>CTY Dịch vụ lữ hành</h4>
+          <h1>VE CHAI</h1>
+          <p>Tour cộng đồng tham quan Củ Chi</p>
+        </div>
+      </div>
+      <form action="" class="subscribe-form-sm-screen">
+        <div class="mb-3 mx-5">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3 text-center pb-3">
+          <button class="btn btn-success mx-auto">Đăng ký</button>
+        </div>
+      </form>
+      <!--Subscript form for small screen-->
+      <!-- Banner section-->
+
+      <!-- Subscribe form -->
+      <div class="subscribe-form-wrapper">
+        <div class="container">
+          <div
+            class="row mx-2 d-flex justify-content-between flex-column py-sm-1 py-xl-3"
+          >
+            <div class="logo">
+              <img src="images/logo.png" class="logo-image" alt="logo" />
+            </div>
+            <div class="mb-3">
+              <div class="subscribe-info">
+                <h4>CTY Dịch vụ lữ hành</h4>
+                <h1>VE CHAI</h1>
+                <p>Tour cộng đồng tham quan Củ Chi</p>
+              </div>
+            </div>
+            <form action="" class="subscribe-form">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3 text-center">
+                <button class="btn btn-success mx-auto">Đăng ký</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Subscribe form -->
+    </section>
+    <!-- BANNER-->
+
+    <!-- CC INTRO -->
+    <section class="about-cc-wrapper">
+      <div class="container">
+        <!-- Grid row -->
+        <div class="row d-flex justify-content-center">
+          <!-- Grid column -->
+          <div class="col-sm-4">
+            <div class="intro-box p-2" id="intro-box-1">
+              <div class="intro-text">
+                <h2 class="text-white">Củ Chi</h2>
+                <h1 class="text-white"><i class="bi bi-geo-alt"></i></h1>
+                <h4 class="text-white">Vị trí địa lí</h4>
+                <a href="pages/about-cc.html#location">
+                  <button class="btn btn-more">Xem thêm</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-sm-4">
+            <div class="intro-box p-2" id="intro-box-2">
+              <div class="intro-text">
+                <h2 class="text-white">Củ Chi</h2>
+                <h1 class="text-white"><i class="bi bi-clock-history"></i></h1>
+                <h4 class="text-white">Dòng lịch sử</h4>
+                <a href="pages/about-cc.html#history">
+                  <button class="btn btn-more">Xem thêm</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-sm-4">
+            <div class="intro-box p-2" id="intro-box-3">
+              <div class="intro-text">
+                <h2 class="text-white">Củ Chi</h2>
+                <h1 class="text-white"><i class="bi bi-people"></i></h1>
+                <h4 class="text-white">Con người và cuộc sống</h4>
+                <a href="pages/about-cc.html#people">
+                  <button class="btn btn-more">Xem thêm</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- CC INTRO -->
+
+    <!--ABOUT TOUR MEMBERS-->
+    <section class="about-member-wrapper" id="member-about">
+      <div class="container about-member-background">
+        <!-- Group caption -->
+        <div class="about-caption">
+          <h2>Chúng tôi là ai?</h2>
+          <div class="dash"></div>
+          <p class="quote-text">
+            "...Cuộc đời là những chuyến đi.<br />
+            Có người thích đi chậm. Có người thích đi nhanh. Còn chúng tôi thích
+            đi xe đạp..."
           </p>
         </div>
-      </div>
-    </section>
+        <!-- Group caption -->
 
-    <!-- IMAGE LIST -->
-    <section>
-      <div class="container-fluid image-list-bg-color">
-        <div class="row image-heading">
-          <div class="col-12">
-            <h2 class="image-text">Neighborhood Guildes</h2>
-            <p>
-              Not sure where to stay? We've created neighborhood guildes for
-              cities all around the world.
-            </p>
-          </div>
-        </div>
-        <div class="image-wrapper">
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex flex-column justify-content-between"
-            >
-              <img src="images/mexico-city.png" alt="mexico city" />
-              <img src="images/ny.png" alt="new york" />
-            </div>
-            <div
-              class="col-lg-4 col-md-6 d-flex flex-column justify-content-between"
-            >
-              <img src="images/paris.png" alt="paris" />
-              <img src="images/tokyo.png" alt="tokyo" class="test1" />
-            </div>
-            <div
-              class="col-lg-4 col-md-6 d-flex flex-column justify-content-between"
-            >
-              <img src="images/invite.png" alt="invite friend" />
+        <!-- Grid row -->
+        <div class="row d-flex justify-content-center">
+          <!-- Grid column -->
+          <div class="col-12 col-md-3">
+            <div class="profile">
+              <div class="profile-image">
+                <img src="images/profile-1.jpg" alt="profile-1" />
+              </div>
+              <div class="member-name">
+                <h4 class="text-name">Nezumi</h4>
+                <h6>Trip Planner</h6>
+              </div>
+              <div class="member-intro">
+                <p class="quote-text">"...thích sống trong sự chậm rãi..."</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <hr />
+          <!-- Grid column -->
 
-    <!-- FOOTER -->
-    <section>
-      <div class="container-fluid footer-bg-color">
-        <div class="footer-wrapper">
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-12 d-flex flex-column justify-content-between"
-            >
-              <div class="footer-text">
-                <h3>Travel</h3>
-                <p>
-                  From apartments and rooms to treehouses and boats: stay up in
-                  unique spaces in 192 countries.
-                </p>
+          <!-- Grid column -->
+          <div class="col-12 col-md-3">
+            <div class="profile">
+              <div class="profile-image">
+                <img src="images/profile-2.jpg" alt="profile-1" />
               </div>
-              <br />
-              <div class="footer-link">
-                <a href="#">See how to travel on Airbnb</a>
+              <div class="member-name">
+                <h4 class="text-name">Snails</h4>
+                <h6>Plan Supporter</h6>
               </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-12 d-flex flex-column justify-content-between"
-            >
-              <div class="footer-text">
-                <h3>Host</h3>
-                <p>
-                  Renting out your unused space could pay your bills or fund
-                  your next vaction.
-                </p>
-              </div>
-              <br />
-              <div class="footer-link">
-                <a href="#">Learn more about hosting</a>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-12 d-flex flex-column justify-content-between"
-            >
-              <div class="footer-text">
-                <h3>Trust and Safety</h3>
-                <p>
-                  From Verified ID to our worldwide customer support team, we've
-                  got your back.
-                </p>
-              </div>
-              <br />
-              <div class="footer-link">
-                <a href="#">Learn about trust at Airbnb</a>
+              <div class="member-intro">
+                <p class="quote-text">"...tôi là Turbo, ốc sên siêu tốc..."</p>
               </div>
             </div>
           </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-12 col-md-3">
+            <div class="profile">
+              <div class="profile-image">
+                <img src="images/profile-3.jpg" alt="profile-1" />
+              </div>
+              <div class="member-name">
+                <h4 class="text-name">Mer</h4>
+                <h6>Plan Introducer</h6>
+              </div>
+              <div class="member-intro">
+                <p class="quote-text">
+                  "...quê nhà là vùng đất của những giấc mơ..."
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-12 col-md-3">
+            <div class="profile">
+              <div class="profile-image">
+                <img src="images/profile-4.jpg" alt="profile-1" />
+              </div>
+              <div class="member-name">
+                <h4 class="text-name">Kudo</h4>
+                <h6>Sponsor</h6>
+              </div>
+              <div class="member-intro">
+                <p class="quote-text">"...bạn cần tiền à..."</p>
+              </div>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!--ABOUT TOUR MEMBERS-->
+
+    <!-- ABOUT TOURS -->
+    <section class="tour-wrapper">
+      <div class="">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- FOSACO tour -->
+            <div class="carousel-item active tour-banner">
+              <!-- Banner image -->
+              <picture>
+                <source
+                  srcset="images/lang-dan-toc-1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/lang-dan-toc-800.jpg"
+                  media="(min-width: 800px)"
+                />
+                <source
+                  srcset="images/lang-dan-toc-768.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="images/lang-dan-toc-425.jpg"
+                  alt="responsive image"
+                  class="d-block img-fluid"
+                />
+              </picture>
+              <!-- Banner image -->
+
+              <!--Tour caption -->
+              <div class="tour-title">
+                <p class="title-text">TOUR</p>
+                <p class="title-text">Khu du lịch sinh thái</p>
+                <p class="title-text">Củ Chi Fosaco</p>
+                <p>(Đi về trong ngày)</p>
+                <a href="pages/fosaco-tour.html">
+                  <button class="btn-more">Khám phá ngay</button>
+                </a>
+              </div>
+              <!--Tour caption -->
+            </div>
+            <!-- FOSACO tour -->
+
+            <!-- Tunnel tour -->
+            <div class="carousel-item">
+              <!-- Banner image -->
+              <picture>
+                <source
+                  srcset="images/dia-dao-cu-chi-1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/dia-dao-cu-chi-800.jpg"
+                  media="(min-width: 800px)"
+                />
+                <source
+                  srcset="images/dia-dao-cu-chi-768.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="images/dia-dao-cu-chi-425.jpg"
+                  alt="responsive image"
+                  class="d-block img-fluid"
+                />
+              </picture>
+              <!-- Banner image -->
+
+              <!--Tour caption -->
+              <div class="tour-title">
+                <p class="title-text">TOUR</p>
+                <p class="title-text">Địa đạo Củ Chi</p>
+                <p>(Đi về trong ngày)</p>
+                <a href="pages/tunnel-tour.html">
+                  <button class="btn-more">Khám phá ngay</button>
+                </a>
+              </div>
+              <!--Tour caption -->
+            </div>
+            <!-- Tunnel tour -->
+
+            <!-- Around CC tour -->
+            <div class="carousel-item">
+              <!-- Banner image -->
+              <picture>
+                <source
+                  srcset="images/thu-gian-1200.jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/thu-gian-800.jpg"
+                  media="(min-width: 800px)"
+                />
+                <source
+                  srcset="images/thu-gian-768.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="images/thu-gian-425.jpg"
+                  alt="responsive image"
+                  class="d-block img-fluid"
+                />
+              </picture>
+              <!-- Banner image -->
+
+              <!--Tour caption -->
+              <div class="tour-title">
+                <p class="title-text">TOUR</p>
+                <p class="title-text">Vòng quanh</p>
+                <p class="title-text">Củ Chi</p>
+                <p>(Đi về trong ngày)</p>
+                <a href="pages/around-cc.html">
+                  <button class="btn-more">Khám phá ngay</button>
+                </a>
+              </div>
+              <!--Tour caption -->
+            </div>
+            <!-- Around CC tour -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
+    <!-- ABOUT TOURS -->
+
+    <!--FOOTER-->
+    <footer class="footer-wrapper" id="group-contact">
+      <!-- Section: Link -->
+      <section class="link-wrapper">
+        <div class="container">
+          <!-- Grid row -->
+          <div class="row mt-3 row-link-wrapper">
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">Ve Chai Tour</h6>
+              <p>
+                Các bạn tưởng là tour đi nhặt rác đúng không? Không, đấy là tour
+                bảo vệ môi trường :)
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-4" id="other-link-column">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Liên kết khác</h6>
+              <p>
+                <a
+                  href="https://vi.wikipedia.org/wiki/C%E1%BB%A7_Chi"
+                  class="other-link"
+                  >Wikipedia</a
+                >
+              </p>
+              <p>
+                <a href="http://diadaocuchi.com.vn/" class="other-link"
+                  >Địa đạo Củ Chi</a
+                >
+              </p>
+              <p>
+                <a href="#" class="other-link">More link</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto mb-4" id="contact-column">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+              <p>
+                <i class="bi bi-house-door-fill" style="font-style: normal">
+                  Tân Thạnh Tây, Củ Chi, TP.HCM</i
+                >
+              </p>
+              <p>
+                <i class="bi bi-envelope-fill" style="font-style: normal">
+                  phuocthfx15563@funix.edu.vn</i
+                >
+              </p>
+              <p>
+                <i class="bi bi-telephone-fill" style="font-style: normal">
+                  +84 03797128xx</i
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+    </footer>
+    <!--FOOTER-->
   </body>
 </html>
