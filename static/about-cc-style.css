@@ -297,17 +297,17 @@ hr {
   0% {
     border: 1px solid orange;
     color: orange;
-    content: "Tuổi trẻ";
+    content: "Lịch sử";
   }
   50% {
     border: 1px solid blue;
     color: blue;
-    content: "Gặp nhau";
+    content: "Quê hương";
   }
   100% {
     border: 1px solid purple;
     color: purple;
-    content: "Thử thách";
+    content: "Con người";
   }
 }
 
@@ -358,17 +358,17 @@ hr {
   0% {
     border: 1px solid orange;
     color: orange;
-    content: "chuyến đi";
+    content: "hào hùng";
   }
   50% {
     border: 1px solid blue;
     color: blue;
-    content: "niềm vui";
+    content: "thanh bình";
   }
   100% {
     border: 1px solid purple;
     color: purple;
-    content: "câu chuyện";
+    content: "chất phát";
   }
 }
 
@@ -421,22 +421,8 @@ hr {
   justify-content: space-between;
 }
 
-/*tour-description*/
-.tour-description {
-  height: calc(200px + 5vh);
-  padding: 1rem 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .tour-description {
-    height: calc(200px + 5vh);
-    padding: 1rem 0;
-    font-size: 120%;
-  }
-}
-
-.tour-description ul {
-  list-style-type: square;
+.tour:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*side-picture*/
