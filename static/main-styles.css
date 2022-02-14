@@ -537,11 +537,11 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-  .btn-more {
+  .btn-more-cc {
     display: none !important;
   }
 
-  .intro-box:hover .btn-more {
+  .intro-box:hover .btn-more-cc {
     display: inline-flex !important;
     /* text-decoration: none !important; */
   }
@@ -552,7 +552,8 @@ hr {
 }
 
 /*More-button*/
-.btn-more {
+.btn-more,
+.btn-more-cc {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border: 2px solid #fff !important;
   color: #fff !important;
