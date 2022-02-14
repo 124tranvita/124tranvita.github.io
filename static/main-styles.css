@@ -459,7 +459,6 @@ hr {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     /* animation-delay: 5s; */
-    transition-duration: 10s;
   }
 
   @keyframes intro-box-1-bg-change {
@@ -478,7 +477,6 @@ hr {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    transition-duration: 10s;
   }
 
   @keyframes intro-box-2-bg-change {
@@ -497,7 +495,6 @@ hr {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    transition-duration: 10s;
   }
 
   @keyframes intro-box-3-bg-change {
@@ -511,7 +508,6 @@ hr {
 }
 
 .intro-text {
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   position: absolute;
   top: 0;
@@ -528,7 +524,7 @@ hr {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 425px) {
   .intro-text {
     background-color: rgba(0, 0, 0, 0.5);
     max-width: 90%;
@@ -536,19 +532,27 @@ hr {
   }
 }
 
+.intro-box:hover .intro-text {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 @media screen and (min-width: 768px) {
-  .intro-text {
-    display: none;
+  .btn-more {
+    display: none !important;
   }
 
-  .intro-box:hover .intro-text {
-    display: flex;
+  .intro-box:hover .btn-more {
+    display: inline-flex !important;
+    /* text-decoration: none !important; */
+  }
+
+  .intro-box:hover .intro-text > a {
+    text-decoration: none !important;
   }
 }
 
 /*More-button*/
 .btn-more {
-  border-radius: 5%;
   background-color: rgba(255, 255, 255, 0.1) !important;
   border: 2px solid #fff !important;
   color: #fff !important;
